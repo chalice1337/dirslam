@@ -9,7 +9,7 @@ compile the src with g++ dirslam.cpp -o dirslam , then run the binary with
 
 # Windows: 
 Compile with g++ dirslam.cpp -o dirslam.exe
-And then ./dirslam.exe
+And then ./dirslam.exe -l urlgoeshere -w wordlistpath
 Dont forget to add the .exe windows users
 
 # Etc
