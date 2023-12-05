@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
     std::cout << "\nmade by chalice1337\n\n";
 
     if (argc != 5 || std::string(argv[1]) != "-l" || std::string(argv[3]) != "-w") {
-        std::cerr << "ERROR!, Invalid Format. Usage /.dirslam -l https://vulnerable_website.com/ -w wordlist.txt\n";
+        std::cerr << "ERROR!, Invalid Format. Usage /.dirslam -l https://website.com/ -w wordlist.txt\n";
         return 1;
     }
     
