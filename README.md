@@ -2,7 +2,7 @@
 Simple C++ Website Directory Brute Forcer for WebApplication Penetration Tests
 
 # How to use
-
+Windows and Linux
 # Linux: 
 compile the src with g++ dirslam.cpp -o dirslam , then run the binary with 
 ./dirslam -l urlgoeshere -w wordlistpath
