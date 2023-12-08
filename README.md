@@ -1,3 +1,4 @@
+# dirslam v2 IS OUT NOW
 # dirslam
 Simple C++ Website Directory Brute Forcer for WebApplication Penetration Tests
 
