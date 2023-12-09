@@ -1,20 +1,40 @@
-# dirslam v2 IS OUT NOW
-# dirslam
-Simple C++ Website Directory Brute Forcer for WebApplication Penetration Tests
+```markdown
+# DirSlam
 
-# How to use
-Windows and Linux
-# Linux: 
-compile the src with g++ DirSlam.cpp -o dirslam -lcurl , then run the binary with 
-./dirslam -l urlgoeshere -w wordlistpath
+DirSlam is a simple directory enumeration tool written in C++. It uses libcurl to make HTTP requests to a target URL and checks if certain directories exist.
 
-# Windows: 
-Compile with DirSlam.cpp -o dirslam.exe -lcurl
-And then ./dirslam.exe -l urlgoeshere -w wordlistpath
-Dont forget to add the .exe windows users
+## Usage
 
-# Etc
+```bash
+./dirslam -l https://website.com/ -w wordlist.txt
+```
 
-I added a pretty good wordlist just incase you cant find any
+In the command above, `-l` specifies the target URL and `-w` specifies the path to the wordlist file.
 
-I'm pretty new to coding so this tool isnt as efficient as other tools that exist but i tried
+## Wordlist
+
+The wordlist file should contain a list of directory names, one per line. For example:
+
+```
+index
+images
+download
+2006
+news
+...
+```
+
+When you run DirSlam, it will append each directory name to the target URL and make an HTTP request to that URL. If the server responds with a 200 status code, DirSlam will print a message indicating that the directory exists.
+
+## Building
+
+To build DirSlam, you need a C++ compiler and libcurl. Once you have these installed, you can build DirSlam with the following command:
+
+```bash
+g++ -o dirslam DirSlam.cpp -lcurl
+```
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+```
